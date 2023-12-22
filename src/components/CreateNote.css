@@ -1,0 +1,37 @@
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 70%;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+textarea {
+    width: 70%;
+    border-radius: 7px;
+}
+
+.btn {
+    padding: .2rem;
+    background: white;
+    /* border: none; */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    input {
+        width: 60%;
+    }
+
+    textarea {
+        width: 60%;
+    }
+
+}

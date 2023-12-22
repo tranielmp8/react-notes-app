@@ -1,0 +1,36 @@
+Step #1 - Install JSON Server
+To install JSON Server in your application, navigate to your project directory in your terminal or command prompt and type in this command: npm install -g json-server.
+
+This will install the JSON server globally on your system. If you want to install it locally for just a particular project instead, use this command: npm i json-server.
+
+Step #2 - Create a JSON File
+Create a JSON file in your project directory that will act as the data source. This JSON file should have a .json file extension. What do I mean? Let's say you want your JSON file name to be 'db', it means you'll create a file called db.json.
+
+Step #3 - Create Data
+Define your data inside the JSON file. This JSON data can be an array of objects or an object with nested objects. Each object represents a data entity and should each have a unique id. json example below(
+    {
+    "notes": [
+        {
+            "title": "FIRST TITLE",
+            "description": "first body of information",
+            "id": 1
+        },
+        {
+            "title": "second TITLE",
+            "description": "second body of information",
+            "id": 2
+        },
+        {
+            "title": "third TITLE",
+            "description": "third body of information",
+            "id": 3
+        }
+    ]
+}
+
+)
+
+Step #4 - Start the Server
+Start up the JSON Server by typing this command into your terminal: json-server --watch db.json. This will run on "https://localhost:3000" by default. You can change the port it's running on by specifying a different port number when starting the server using the --port flag.
+
+For example, if you want your server to run on port 8000 instead of the default (3000), use this command while starting the server: json-server --watch db.json --port 8000. You can then view this in your browser on port 8000.

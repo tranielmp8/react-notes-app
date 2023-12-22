@@ -1,0 +1,33 @@
+
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: .5rem;
+  }
+
+.active {
+    box-shadow: rgba(148, 3, 3, 0.568) 0px 3px 8px;
+}
+
+.delete-btn {
+    padding: 1rem;
+    background: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+   
+    .notes {
+        margin-top: 10px;
+        width: 250px;
+        height: 250px;
+    }
+}
